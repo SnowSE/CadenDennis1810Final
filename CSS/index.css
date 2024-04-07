@@ -1,0 +1,39 @@
+body {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding:0em;
+  margin:0em;
+}
+
+#homebutton {
+    background-color:grey;
+    text-decoration: none;
+    color:black;
+    
+}
+.header {
+  background-color: darkblue;
+  font-size:xx-large;
+}
+
+.links {
+    height:1000px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.button {
+    color:black;
+    font-size:50px;
+    margin-top:30px;
+    margin-bottom:30px;
+    background-color: grey;
+    border:none;
+    padding: 15px 32px;
+    text-decoration: none;
+}
+
