@@ -1,0 +1,57 @@
+:root {
+    --RichBlack: rgb(13,27,42);
+    --OxfordBlue: rgb(27,38,59);
+    --ModerateBlue: rgb(65,90,119);
+    --SilverLakeBlue: rgb(119,141,169);
+    --Platinum: rgb(224,225,221);
+  }
+
+body {
+    background-color: var(--RichBlack);
+    color: var(--Platinum);
+    text-align:center;
+    padding:0em;
+    margin:0em;
+}
+
+#homebutton {
+    background-color: var(--SilverLakeBlue);
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    background-color: var(--OxfordBlue);
+    font-size:xx-large;
+}
+
+header, .row {
+    display: flex;
+}
+
+.col {
+    flex: 1;
+}
+
+.LetterRow {
+    flex: 1;
+    text-align: left;
+    margin-left:2.9em;
+}
+
+.Tile {
+    background-color: aqua;
+}
+
+.BattleshipGame {
+    height:60em;
+}
+
+.BelowHeader {
+    flex: 1;
+    display:flex;
+    justify-content: space-between;
+    background-color:darkblue;
+    padding-left: 1em;
+    padding-right: 1em;
+}

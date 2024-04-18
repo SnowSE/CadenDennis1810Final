@@ -1,19 +1,27 @@
+:root {
+  --RichBlack: rgb(13,27,42);
+  --OxfordBlue: rgb(27,38,59);
+  --ModerateBlue: rgb(65,90,119);
+  --SilverLakeBlue: rgb(119,141,169);
+  --Platinum: rgb(224,225,221);
+}
+
 body {
-  background-color: black;
-  color: white;
+  background-color: var(--RichBlack);
+  color: var(--Platinum);
   text-align: center;
   padding:0em;
   margin:0em;
 }
 
 #homebutton {
-    background-color:grey;
+    background-color: var(--SilverLakeBlue);
     text-decoration: none;
     color:black;
     
 }
 .header {
-  background-color: darkblue;
+  background-color: var(--OxfordBlue);
   font-size:xx-large;
 }
 
