@@ -20,6 +20,14 @@ body {
       color:black;
       
   }
+
+  .button {
+    background-color:white;
+    color:black;
+    padding:0.25em;
+    border:gray;
+  }
+
   .header {
     background-color: var(--OxfordBlue);
     font-size:xx-large;
