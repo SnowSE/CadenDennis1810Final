@@ -25,26 +25,13 @@ body {
     font-size:xx-large;
 }
 
-header, .row {
-    display: flex;
-}
-
-.col {
-    flex: 1;
-}
-
-.LetterRow {
-    flex: 1;
-    text-align: left;
-    margin-left:2.9em;
-}
 
 .Tile {
     background-color: aqua;
 }
 
 .BattleshipGame {
-    height:60em;
+    height:40em;
 }
 
 .BelowHeader {
@@ -57,5 +44,31 @@ header, .row {
 }
 
 .scrollable {
-    
+    overflow-y:auto;
+}
+
+.table {
+    display: flex;
+    flex-flow: column nowrap;
+    border: 1px solid black;
+    height:60em;
+}
+
+.row {
+    display: flex;
+    border-bottom: 1px solid black;
+}
+
+.heading {
+    font-weight: bold;
+}
+
+.cell {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding:1em;
+    background-color: var(--SilverLakeBlue);
+    color:var(--RichBlack);
 }
