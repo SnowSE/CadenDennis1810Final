@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="../CSS/Lobby.css">
     <Title>Battleship lobby</Title>
+    <script type="module" src="..\..\JavaScript\lobby\lobbyclient.js"></script>
 </head>
 <body>
     <article class="header">
@@ -10,12 +11,16 @@
     </article>
     <article>
         <label for="PlayerName">Player Name:</label>
-        <input name="PlayerName">
+        <input id="PlayerName" name="PlayerName">
+        <br>
+        <br>
+        <label for="LobbySearch">Search For Player:</label>
+        <input id ="LobbySearch" name="LobbySearch">
     </article>
     <br>
     <br>
     <section class="lobbymenu">
-        <div class="lobbies">
+        <div id="lobbybox" class="lobbies">
             <div class="Lobby">
                 <section class="label">Caden's Game</section>
                 <section class="label">1/2</section>
