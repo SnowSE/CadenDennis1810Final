@@ -1,67 +1,69 @@
 :root {
-  --RichBlack: rgb(13,27,42);
-  --OxfordBlue: rgb(27,38,59);
-  --ModerateBlue: rgb(65,90,119);
-  --SilverLakeBlue: rgb(119,141,169);
-  --Platinum: rgb(224,225,221);
+  --RichBlack: rgb(13, 27, 42);
+  --OxfordBlue: rgb(27, 38, 59);
+  --ModerateBlue: rgb(65, 90, 119);
+  --SilverLakeBlue: rgb(119, 141, 169);
+  --Platinum: rgb(224, 225, 221);
 }
 
-body { 
-    background-color: var(--RichBlack);
-    color: var(--Platinum);
-    text-align: center;
-    padding:0em;
-    margin:0em;
-  }
-  
-  #homebutton {
-      background-color:var(--SilverLakeBlue);
-      text-decoration: none;
-      color:black;
-      
-  }
+body {
+  background-color: var(--RichBlack);
+  color: var(--Platinum);
+  text-align: center;
+  padding: 0em;
+  margin: 0em;
+}
 
-  .button {
-    background-color:white;
-    color:black;
-    padding:0.25em;
-    border:gray;
-  }
+#homebutton {
+  background-color: var(--SilverLakeBlue);
+  text-decoration: none;
+  color: black;
+}
 
-  .header {
-    background-color: var(--OxfordBlue);
-    font-size:xx-large;
-  }
-  
-  .links {
-      height:1000px;
-      display:flex;
-      flex-direction:column;
-      justify-content: center;
-      align-items: center;
-      
-  }
+.button {
+  background-color: white;
+  color: black;
+  padding: 0.25em;
+  border: gray;
+}
 
-  .button {
-    color:black;
-    font-size:50px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    background-color: var(--SilverLakeBlue)
-  }
+.header {
+  background-color: var(--OxfordBlue);
+  font-size: xx-large;
+}
 
-  .label {
-    padding:1em;
-    color:Red;
-  }
+.links {
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  .Lobby {
-    display: flex;
-    justify-content: space-between;
-    border:solid;
-    border-color:var(--Platinum);
-  }
-  
+.button {
+  color: black;
+  font-size: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: var(--SilverLakeBlue);
+}
 
-  
-  
+.label {
+  padding: 1em;
+  color: Red;
+}
+
+.Lobby {
+  display: flex;
+  justify-content: space-between;
+  border: solid;
+  border-color: var(--Platinum);
+}
+
+.lobbybutton {
+  color: black;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: var(--SilverLakeBlue);
+}

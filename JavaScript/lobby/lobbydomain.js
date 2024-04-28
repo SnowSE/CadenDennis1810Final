@@ -6,8 +6,6 @@ var playercount;
 
 export var currentlobbies = lobbies;
 
-export const setLobbies = (newLobbies) => (lobbies = newLobbies);
-
 export const getLobbiesbyPlayerName = (HostName) => {
   lobbies.filter((l) => l.HostName === HostName);
 };

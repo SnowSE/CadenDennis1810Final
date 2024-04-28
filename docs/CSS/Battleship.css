@@ -31,7 +31,8 @@ body {
 }
 
 .BattleshipGame {
-    height:40em;
+    height:60em;
+    overflow-y: scroll
 }
 
 .BelowHeader {
@@ -51,7 +52,7 @@ body {
     display: flex;
     flex-flow: column nowrap;
     border: 1px solid black;
-    height:60em;
+    height: 30em;
 }
 
 .row {

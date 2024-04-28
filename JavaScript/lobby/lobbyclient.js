@@ -1,13 +1,28 @@
-import { createLobby, currentlobbies, setLobbies } from "./lobbydomain.js";
+import { createLobby, currentlobbies, getLobbiesbyPlayerName } from "./lobbydomain.js";
+
+export const CreateLobbyButton = () => {
+  const playername = document.getElementById("PlayerName");
+  const Inputbox = document.getElementById("Inputs");
+
+  const NewLobbyButton = document.createElement("button");
+
+  NewLobbyButton.textContent = "Create New Lobby";
+  NewLobbyButton.classList.add("lobbybutton");
+
+  Inputbox.appendChild(NewLobbyButton);
+
+  NewLobbyButton.addEventListener("click", (e) => {
+    createLobby(playername.value);
+  })
+
+  createLobby(playername.value);
+  displayLobbies();
+}
 
 export const displayLobbies = () => {
-  setLobbies(currentlobbies);
-
   const lobbiesbox = document.getElementById("lobbybox");
   lobbiesbox.replaceChildren();
 
-  const playername = document.getElementById("PlayerName");
-  createLobby(playername.value);
   currentlobbies.forEach((lobby) => {
     const Gametitle = document.createElement("Section");
     Gametitle.classList.add("label");
@@ -41,6 +56,8 @@ playernamesearch.addEventListener("keypress", async (e) => {
   getLobbiesbyPlayerName(playernamesearch.value);
   setLobbies(currentlobbies);
 });
+
+CreateLobbyButton();
 
 if (currentlobbies !== undefined) {
   displayLobbies();

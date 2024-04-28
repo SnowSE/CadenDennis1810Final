@@ -3,19 +3,167 @@
   <head>
     <link rel="stylesheet" href="..\CSS\Battleship.css" />
     <title>Battleship</title>
-    <script type="module" src="JavaScript\game\gameclient.js"></script>
+    <script type="module" src="../../JavaScript/game/gameclient.js"></script>
   </head>
   <body>
     <article class="header">
       <a id="homebutton" href="index.html">Home</a>
     </article>
-    <section class="BelowHeader">
+    <section id="infobar" class="BelowHeader">
         <p>Current Player's Turn: You</p>
         <p>Turn Count: 3</p>
     </section>
     <br><br><br>
     <section class="BattleshipGame">
-      <div class="table">
+      <label for="PlayerBoard">Your Board</label>
+      <div id="PlayerBoard" class="table">
+        <div class="row heading">
+          <div class="cell"></div>
+          <div class="cell">1</div>
+          <div class="cell">2</div>
+          <div class="cell">3</div>
+          <div class="cell">4</div>
+          <div class="cell">5</div>
+          <div class="cell">6</div>
+          <div class="cell">7</div>
+          <div class="cell">8</div>
+          <div class="cell">9</div>
+          <div class="cell">10</div>
+        </div>
+        <div class="row">
+          <div class="cell">A</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+        </div>
+        <div class="row">
+          <div class="cell">B</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+        </div>
+        <div class="row">
+          <div class="cell">C</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+        </div>
+        <div class="row">
+          <div class="cell">D</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+        </div>
+        <div class="row">
+          <div class="cell">E</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+        </div>
+        <div class="row">
+          <div class="cell">F</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+        </div>
+        <div class="row">
+          <div class="cell">G</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+        </div>
+        <div class="row">
+          <div class="cell">H</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+        </div>
+        <div class="row">
+          <div class="cell">I</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+        </div>
+        <div class="row">
+          <div class="cell">J</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+          <div class="cell">hidden</div>
+        </div>
+        <br>
+        <br>
+        <label for="OpponentsBoard">Opponent's Board</label>
+      <div id="OpponentsBoard"class="table">
         <div class="row heading">
           <div class="cell"></div>
           <div class="cell">1</div>
@@ -161,66 +309,15 @@
         </div>
 
       </div>
-      <!-- <header>
-        <div class="col"></div>
-        <div class="col">1</div>
-        <div class="col">2</div>
-        <div class="col">3</div>
-        <div class="col">4</div>
-        <div class="col">5</div>
-        <div class="col">6</div>
-        <div class="col">7</div>
-        <div class="col">8</div>
-        <div class="col">9</div>
-        <div class="col">10</div>
-      </header>
-      <div class="row">
-        <div class="LetterRow">A</div>
-        <div class="Clickspace">hidden</div>
-        <div class="Clickspace">hidden</div>
-        <div class="Clickspace">hidden</div>
-        <div class="Clickspace">hidden</div>
-        <div class="Clickspace">hidden</div>
-        <div class="Clickspace">hidden</div>
-        <div class="Clickspace">hidden</div>
-        <div class="Clickspace">hidden</div>
-        <div class="Clickspace">hidden</div>
-        <div class="Clickspace">hidden</div>
-      </div>
-      <div class="row">
-        <div class="LetterRow">B</div>
-      </div>
-      <div class="row">
-        <div class="LetterRow">C</div>
-      </div>
-      <div class="row">
-        <div class="LetterRow">D</div>
-      </div>
-      <div class="row">
-        <div class="LetterRow">E</div>
-      </div>
-      <div class="row">
-        <div class="LetterRow">F</div>
-      </div>
-      <div class="row">
-        <div class="LetterRow">G</div>
-      </div>
-      <div class="row">
-        <div class="LetterRow">H</div>
-      </div>
-      <div class="row">
-        <div class="LetterRow">I</div>
-      </div>
-      <div class="row">
-        <div class="LetterRow">J</div>
-      </div> -->
     </section>
-    <article class="scrollable">
+    <figure class="scrollable">
         <hr>
-        <div>Current Highest Scores</div>
+        <figcaption>Current Highest Scores</figcaption>
         <hr>
-        <p>Alex: 5 Ships remain, 17 turns spent</p>
-        <p>Caden: 2 Ships remain, 32 turns spent</p>
-    </article>
+        <ol id="HighScorelist">
+          <li>Alex: 5 Ships remain, 17 turns spent</li>
+          <li>Caden: 2 Ships remain, 32 turns spent</li>
+        </ol>
+    </figure>
   </body>
 </html>
